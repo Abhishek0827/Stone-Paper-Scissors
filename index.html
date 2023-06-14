@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone,Paper,Scissor</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            display: grid;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div>
+                <!--+++++++THIS IS THE START BUTTON++++++++ -->
+                <div id="d1" style="display: flex; justify-content: center; align-items: center; ">
+                    <button id="start">
+                        start
+                    </button>
+                </div>
+                <!-- +++++++++++++++++++++++++++++++++++++++ -->
+                <!-- ===================MAIN GAME=========================== -->
+                <div class="m">
+                    <div class="scoreboard">
+                        <div class="score" id="score1">
+                            <p style="color: red;">COMPUTER</p><!--computer score-->
+                            <p id="co">0</p><!--computer score-->
+                        </div>
+                        <div class="score" style="font-size: 100%; display: flex; align-items: center;
+                        justify-content: center;" id="score3">
+                            <P id="outcome">--</P><!--SUB RESULT-->
+                        </div>
+                        <div class="score" id="score2">
+                            <P style="color: blue;">USER</P><!--user score-->
+                            <p id="us">0</p><!--user score-->
+                        </div>
+                    </div>
+                    <div class="n">
+                        <div class="choice2"><!--COMPUTER OPTION-->
+                            <button class="c" id="stone2">STONE</button>
+                            <button class="c" id="paper2">PAPER</button>
+                            <button class="c" id="scissor2">SCISSOR</button>
+                        </div>
+
+                        <div class="choice"><!--USER OPTION-->
+                            <button class="c" id="stone">STONE</button>
+                            <button class="c" id="paper">PAPER</button>
+                            <button class="c" id="scissor">SCISSOR</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================MAIN GAME=========================== -->
+
+                <!-- GAME RESTART BUTTON -->
+                <div style="display: flex; justify-content: center;">
+                     <button id="b2">
+                        restart
+                    </button>
+                </div>
+                <!-- GAME RESTART BUTTON -->
+
+                <!--Final result -->
+                <div id="r" style="display: none;">
+                    <h1 id="result">result</h1>
+                    <div style="display: flex;justify-content: center;">
+                        <button id="playagain">PLAY AGAIN</button><!--PLAY AGAIN BUTTON-->
+                    </div>
+                </div>
+                <!--Final result -->
+            </div>
+        </div>
+    
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+<script>
+    let re = document.getElementById("b2");
+    re.addEventListener("click", () => {
+        window.location.reload(true);
+    })
+</script>
+
+</html>

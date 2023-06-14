@@ -1,0 +1,144 @@
+body{
+  margin: 0;
+}
+.container {
+  margin: 0;
+  height: 99vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid pink;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-image:url("icon/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* <!--+++++++THIS IS THE START BUTTON++++++++ --> */
+#start {
+  background-color: red;
+  height: 50px;
+  width: 150px;
+  color: white;
+  font-size: larger;
+  border-radius: 20px;
+  border-style: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  /* display: none; */
+}
+/* <!-- ===================MAIN GAME=========================== --> */
+.m {
+  border: 5px solid ;
+  border-style:double ;
+  /* background-color: white; */
+  display: none;
+}
+.scoreboard {
+  border-bottom: 2px solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.score {
+  margin: 5px;
+  /* border: 2px solid blue; */
+  background-color: white;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  line-height: 2px;
+  font-weight: bold;
+}
+@media screen and (max-width:339px) {
+  #score3{
+    order: 3;
+  }
+}
+#outcome{
+  display: flex;
+  order: 1;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+ /* border: 1px solid; */
+}
+.n {
+  display: flex;
+  /* border: 2px solid red; */
+  color: rgb(255, 183, 0);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+}
+.c {color: rgb(255, 183, 0);
+  margin: 5px;
+  height: 100px;
+  width: 100px;
+  /* border: 2px solid blue; */
+  border: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+#stone{
+  background-image: url("icon/stone.jpg");
+  background-size: cover;
+  word-spacing: 5%;
+}
+#paper{
+  background-image: url("icon/paper.jpg");
+  background-size: cover;
+}
+#scissor{
+  background-image: url("icon/Scissors.png");
+  background-size: cover;
+  background-color: gray;
+}
+#stone2{
+  background-image: url("icon/stone.jpg");
+  background-size: cover;
+}
+#paper2{
+  background-image: url("icon/paper.jpg");
+  background-size: cover;
+}
+#scissor2{
+  background-image: url("icon/Scissors.png");
+  background-size: cover;
+  background-color: gray;
+}
+/* <!-- GAME RESTART BUTTON --> */
+#b2 {
+  display: none; justify-content: center; align-items: center; text-transform: capitalize;
+  margin: 10px;
+  background-color: red;
+  height: 50px;
+  width: 100px;
+  color: white;
+  font-size: larger;
+  border-radius: 20px;
+  border-style: none;
+  cursor: pointer;
+}
+/* <!--Final result --> */
+
+#result{
+  text-align: center;
+  border-bottom: 1px solid;
+  /* display: none; */
+}
+#playagain{
+  /* display: none; */
+  background-color: red;
+  height: 30px;
+  width: 150px;
+  color: white;
+  font-size: larger;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+}
